@@ -1,0 +1,118 @@
+main{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+
+    background-color: black;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: white;
+
+    position: fixed;
+    left: -50px;
+    top: calc(50% - 50px);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    &:hover{
+        color: lightblue;
+        box-shadow: 0 0 24px lightblue;
+    }
+}
+
+button.active{
+    transform: rotate(180deg);
+}
+
+.menu{
+    width: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    overflow: hidden;
+}
+
+.menu_active{
+    width: 200px;
+    padding: 8px;
+}
+
+
+.menu .item{
+    width: 100%;
+    overflow: hidden;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+.content_active{
+    transform: rotate(30deg);
+}
+
+.content {
+    text-align: justify;
+
+    width: 80%;
+    min-width: 256px;
+    max-width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+
+    display: flex;
+    flex-direction: column;
+    
+    overflow: scroll;
+}
+
+
+.content h2{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 4px;
+    font-weight: 600;
+}
+
+.content h3{
+    padding: 4px;
+    font-size: 10pt;
+    margin-bottom: 12px;
+}
+
+.content p{
+    margin: 8px 0;
+}
+
+.content img{
+    width: 100%;
+    margin: 16px 0;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+
+@media (max-width: 480px) {
+    main{
+        padding: 0;
+    }
+    .content{
+        width: 100%;
+        padding: 16px;
+    }
+}

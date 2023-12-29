@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-family: 'JetBrains Mono';
+    font-weight: 300;
+    text-decoration: none;
+
+    transition: all .3s;    
+
+
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin: 8px 24px;
+    padding: 8px;
+
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+}
+
+header a {
+    padding: 8px;
+    aspect-ratio: 1/1;
+    background: black;
+    display: flex;
+    color: white;
+
+    &:hover{
+        background-color: #dddddd;
+        box-shadow: 4px 4px black ;
+        color: black;
+    }
+}
+
+header a span {
+    margin: auto;
+}
+
+
+main {
+    margin: 8px 24px;
+    padding: 8px;
+}
+
+main nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+main nav a{
+    padding: 8px 12px;
+    background-color: black;
+    color: white;
+
+    &:hover{
+        background-color: #dddddd;
+        box-shadow: 4px 4px black ;
+        color: black;
+    }
+}
+
+
+strong{
+    font-weight: 600;
+}
+
+
+@media (max-width: 480px){
+    main nav a {
+        width: 100%;
+        padding: 16px 20px;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 02: Progress Steps</title>
+    <link rel="stylesheet" href="../master.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src="scripts.js"></script>
+</head>
+<body onload="start()">
+    <header>
+        <a href="../index.html">
+            <span class="material-symbols-outlined">home</span>
+        </a>
+        <h1>Dia 2</h1>
+    </header>
+    <main>
+        <nav class="progress">
+            <div class="bar" id="bar"></div>
+            <div class="bar_bck"></div>
+            <span class="step">1</span>
+            <span class="step">2</span>  
+            <span class="step">3</span>
+            <span class="step">4</span>
+        </nav>
+        <nav class="controls">
+            <button onclick="back()">
+                <span class="material-symbols-outlined">
+                    chevron_left
+                </span>
+            </button>
+            <button onclick="next()" >
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+            </button>
+        </nav>
+    </main>
+</body>
+</html>
