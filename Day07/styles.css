@@ -1,0 +1,29 @@
+main{
+    display: flex;
+    flex-direction: row;
+
+    height: 100%;
+}
+
+main a{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white;
+    filter: grayscale(100%);
+
+    scale: 0.9;
+
+    &:hover{
+        width: 80%;
+        scale: 1;
+        filter: grayscale(0%);
+    }
+}

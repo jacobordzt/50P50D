@@ -64,6 +64,7 @@ main nav{
 }
 
 main nav a{
+    width: auto;
     padding: 8px 12px;
     background-color: black;
     color: white;
@@ -73,6 +74,7 @@ main nav a{
         box-shadow: 4px 4px black ;
         color: black;
     }
+
 }
 
 
@@ -83,6 +85,7 @@ strong{
 @media screen and (max-width: 1024px){
     main nav a {
         width: 100%;
+        min-width: fit-content;
         padding: 16px 20px;
     }
 }
